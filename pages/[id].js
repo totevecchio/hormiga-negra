@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { productsEstudio, productsMantenimiento } from "../db";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import Image from "../components/Image";
+import Image from "next/image";
 
 const Page = (context) => {
   const [data, setData] = useState([]);
