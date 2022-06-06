@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 const Products = ({ products }) => {
   const [hoverName, setHoverName] = useState("");
