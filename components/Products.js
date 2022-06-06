@@ -26,7 +26,7 @@ const Products = ({ products }) => {
                 passHref={true}
               >
                 <a>
-                  <Image
+                  <img
                     src={product.url}
                     width={200}
                     height={200}

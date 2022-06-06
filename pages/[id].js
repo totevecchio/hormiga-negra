@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import { productsEstudio, productsMantenimiento } from "../db";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import Image from "next/image";
 
 const Page = (context) => {
   const [data, setData] = useState([]);
@@ -39,7 +38,7 @@ const Page = (context) => {
             <div className="big-photo">
               <div className="titulo">{title}</div>
               {data.map((e, i) => (
-                <Image
+                <img
                   key={i}
                   src={e}
                   width={200}

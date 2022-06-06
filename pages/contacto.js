@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import Image from "../components/Image";
 
 const Contacto = () => {
   return (
@@ -10,7 +9,7 @@ const Contacto = () => {
       <div className="container-map">
         <div></div>
         <div className="img-box">
-          <Image src="/map.jpg" alt="" />
+          <img src="/map.jpg" alt="" />
         </div>
         <div className="text-box-contac">
           <div className="text-back">
@@ -30,10 +29,10 @@ const Contacto = () => {
           <div className="iconos">
             <div className="text-back-icons">
               <a href="">
-                <Image src="/instagram-icone-noir.png" alt="" />
+                <img src="/instagram-icone-noir.png" alt="" />
               </a>
               <a href="https://api.whatsapp.com/send?phone=5401155238951&text=Hola%2C%20estoy%20aqu%C3%AD%20por%20">
-                <Image src="/whatsapp1.png" alt="" />
+                <img src="/whatsapp1.png" alt="" />
               </a>
             </div>
           </div>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import logo from '../public/LOGO-HN-SOLARI.png'
 import Image from "next/image";
+import logo from '../public/LOGO-HN-SOLARI.png'
 const Nav = () => {
   return (
     <div className='navBox'>
