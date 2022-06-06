@@ -8,13 +8,51 @@ body {
 
 }
 
-.container { 
+.container-productos-estudio { 
+  position: absolute;
+  width: 100%;
+  /* height: 100vh; */
+  background-color: black;
+  background-image: url("../public/background.jpg");
+  background-size: cover;
+  /* opacity: 0.8; */
+}
+
+.container-acercade { 
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #27282b;
-  /* background-image: url("../images/background\ copy.jpg"); */
+  background-image: url("../public/background1.jpg");
   background-size: cover;
+}
+
+.container-productos-mantenimiento { 
+  position: absolute;
+  width: 100%;
+  /* height: 100vh; */
+  background-color: black;
+  background-image: url("../public/background1.jpg");
+  background-size: cover;
+  /* opacity: 0.8; */
+}
+
+.container-estudio { 
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-image: url("../public/background.jpg");
+  background-size: cover;
+  /* opacity: 0.8; */
+}
+.container-mantenimiento { 
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-image: url("../public/background1.jpg");
+  background-size: cover;
+  /* opacity: 0.8; */
 }
 .container-home { 
   width: 100%;
@@ -40,6 +78,7 @@ body {
   position: relative;
   top: 0; 
   left: 0;
+  margin-top: 1rem;
   /* background-color: aliceblue; */
   display: flex;
   justify-content: center;
@@ -138,51 +177,56 @@ footer {
 }
 
 .photos-container { 
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: center;
-    width: 100%;
-    height: 30rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.titulo { 
+  font-size: 2rem;
+  color: white;
+  border-bottom: 1px white solid;
+  width: 50rem;
 }
 
 .photos { 
-  width: 50%;
+  margin-top: 4rem;
+  width: 80%;
+  margin-left: 23rem;
   /* border: 2px white solid; */
-  display: flex;
 
-}
-
-.big-photo { 
-  /* height: 30rem; */
 }
 
 .big-photo img { 
-  height: 100%;
-  width: 30rem;
-  /* border: 2px white solid; */
+  margin-top: 2rem;
+  height: 40rem;
+  width: 50rem;
+  object-fit: cover ;
 }
 
 .images { 
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   height: 100%;
   width: 3rem;
-  
 }
 
 .images img { 
   height: 6.5rem;
   width: 6.5rem;
-  margin-left: 2rem;
-  border-bottom: 2px white solid;
+  margin: 6px 0 1rem  1rem;
+  object-fit: cover;
+  /* border: 1px white solid; */
+  outline: 1px rgb(157, 157, 157) solid;
+  outline-offset: 5px;
 }
 
 .text { 
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  padding-top: 2rem;
+  color: white;
+  margin-top: 7rem;
+  margin-right: 4rem;
 }
 
 p { 
@@ -190,47 +234,109 @@ p {
 }
 
 .container-staff {
-  position: absolute;
   width: 100%;
-  /* height: 100%; */
-  background-color: #27282b;
   display: grid;
   grid-template-columns: 60% 40%;
+  font-weight: 800;
+  letter-spacing: 2px;
 }
 
 .list-staff { 
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  justify-items: center;
-  margin: 0 4rem;
+  margin: 0 5rem;
   text-align: left;
-  /* align-items: center; */
-  /* display: flex;
-  justify-content: center;
-  width: 100%; */
 }
 
-.list-staff p{
-  color: black;
+.list-staff h2 { 
+  float: left;
+  width: 20rem;
+  font-size: 3.2rem;
+  margin-right: 3rem;
+}
+
+.list-staff p { 
+  font-size: 1.3rem;
+  color: white;
   text-align: left;
 }
+
 
 .text-staff { 
   display: grid;
   justify-items: center;
   align-items: center;
-  margin: 0 4rem;
+  /* margin: 0 4rem; */
 }
 
-.box-staff {
+.text-staff h2{
+  font-size: 3.2rem;
+}
+
+.text-staff p{
+  font-size: 1.3rem;
+  color: white;
+}
+
+.small-img  {
+  cursor: pointer;
+}
+
+.container-map {
+  display: grid;
+  grid-template-columns: 12% 55% 35%;
+  height: 80%;
+}
+
+.img-box img {
+  margin-top: 6rem;
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.text-box-contac {
+  margin-top: 6rem;
+  background-color: rgb(65, 65, 65);
+  width: 65%;
+  height: 70%;
+}
+
+.text-box-contac h2{
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  padding: 0.5rem;
+}
+
+.text-back-icons { 
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 80px;
-  height: 200px;
-  /* border: solid black 1px; */
-  width: 30%;
-  /* justify-content: center; */
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  text-align: left;
-
+  background-color: rgb(96, 96, 96);
+  margin: 1rem;
+  border-radius: 10px;
 }
+
+.iconos img {
+  height: 50px;
+  width: 50px;
+  margin: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.iconos img:hover {
+  height: 50px;
+  width: 50px;
+  margin: 1rem;
+  background-color: rgb(37, 211, 102);
+  border-radius: 10px;
+}
+
+.text-back {
+  background-color: rgb(96, 96, 96);
+  margin: 1rem;
+  border-radius: 10px;
+}
+

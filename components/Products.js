@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
+import Image from "./Image";
 
 const Products = ({ products }) => {
   const [hoverName, setHoverName] = useState("");
@@ -26,14 +26,14 @@ const Products = ({ products }) => {
                 passHref={true}
               >
                 <a>
-                  <img
+                  <Image
                     src={product.url}
                     width={200}
                     height={200}
                     alt="photo"
                     onMouseEnter={(e) => (e.currentTarget.src = product.url1)}
                     onMouseLeave={(e) => (e.currentTarget.src = product.url)}
-                    onMouseOver={(e) => setHoverName(product.id)}
+                    onMouseOver={(e) => setHoverName(product.name)}
                   />
                 </a>
               </Link>

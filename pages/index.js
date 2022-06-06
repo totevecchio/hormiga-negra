@@ -9,7 +9,7 @@ export default function Home() {
       <Nav />
       <video className="home" autoPlay loop muted>
         <source src={video} type="video/mp4" />
-      </video>
+      </video> 
       <div className="list"></div>
       <Footer />
     </div>

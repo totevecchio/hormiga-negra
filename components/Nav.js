@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
-// import logo from '../images/logo.jpeg'
+import logo from '../public/LOGO-HN-SOLARI.png'
+import Image from "./Image";
 const Nav = () => {
   return (
     <div className='navBox'>
       <div className="logo">
-      <Link href="/"><h2>Mark</h2></Link>
-        {/* <Image src={logo} width={50} height={50} alt="logo" /> */}
+      <Link href="/"><Image src={logo} width={60} height={35} alt="logo" /></Link>
+        
       </div>
       <nav>
-        <Link href="/estudio"> ESTUDIO </Link>
-        <Link href="/mantenimiento"> MANTENIMIENTO </Link>
-        <Link href="/contacto">CONTACTO </Link>
-        <Link href="/staff"> STAFF</Link>
+        <Link href="/estudio">ESTUDIO</Link>
+        <Link href="/mantenimiento">MANTENIMIENTO</Link>
+        <Link href="/acercade">QUIENES SOMOS</Link>
+        <Link href="/contacto">CONTACTO</Link>
       </nav>
     </div>
   );

@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 
 const Estudio = () => {
   return (
-    <div className="container">
+    <div className="container-estudio">
       <Nav />
       <div className="wrapper">
         <Products products={productsEstudio} />
