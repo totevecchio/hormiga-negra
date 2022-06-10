@@ -181,6 +181,8 @@ footer {
   grid-template-columns: auto auto auto;
   width: 100%;
   margin-bottom: 3rem;
+  align-items: start;
+
 }
 
 .titulo { 
@@ -224,9 +226,13 @@ footer {
 }
 
 .text { 
+  top: 50px;
+  position: sticky;
   color: white;
   margin-top: 7rem;
+  margin-top: 7rem;
   margin-right: 4rem;
+  align-items:stretch
 }
 
 p { 

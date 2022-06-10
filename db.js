@@ -164,17 +164,16 @@ export let productsEstudio = [
     url1: "/taladro-relleno.png",
     backgroundImg: "container-productos-estudio",
     images: [
-      "emma-bakery/1.jpg",
+      "emma-bakery/10.jpg",
+      "emma-bakery/8.jpg",
+      "emma-bakery/6.jpg",
+      "emma-bakery/7.jpg",
       "emma-bakery/2.jpg",
+      "emma-bakery/1.jpg",
       "emma-bakery/3.jpg",
       "emma-bakery/4.jpg",
       "emma-bakery/5.jpg",
-      "emma-bakery/6.jpg",
-      "emma-bakery/7.jpg",
-      "emma-bakery/8.jpg",
-      "emma-bakery/9.jpg",
-      "emma-bakery/10.jpg",
-
+      
     ],
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatem vitae eligendi explicabo, praesentium harum quia ipsam debitis? Aut hic cum quos impedit reprehenderit error illum adipisci ex pariatur provident!",
   },
