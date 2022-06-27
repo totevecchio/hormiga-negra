@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import video from "../images/hn2.mp4";
+import video2 from "../images/video2.mp4";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 
@@ -12,6 +13,9 @@ export default function Home() {
       <video className="home" autoPlay muted onEnded={() => setVideoFinished(true)}>
         <source src={video} type="video/mp4" id="video" />
       </video> 
+      { videoFinished && <video className="home" autoPlay muted loop onEnded={() => setVideoFinished(true)}>
+        <source src={video2} type="video/mp4" id="video" />
+      </video> }
       <div className="list"></div>
       {videoFinished && <Footer /> }
     </div>
