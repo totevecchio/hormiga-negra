@@ -338,8 +338,11 @@ p {
   height: 50px;
   width: 50px;
   margin: 1rem;
-  background-color: rgb(37, 211, 102);
+  background-color: black;
   border-radius: 10px;
+}
+img:hover { 
+  color: white;
 }
 
 .text-back {

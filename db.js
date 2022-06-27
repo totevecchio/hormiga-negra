@@ -116,7 +116,7 @@ export let productsEstudio = [
       "verne-buenavista/verne1.jpeg",
       "verne-buenavista/verne6.jpeg",
     ],
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatem vitae eligendi explicabo, praesentium harum quia ipsam debitis? Aut hic cum quos impedit reprehenderit error illum adipisci ex pariatur provident!",
+    text: "",
   },
   {
     id: 7,
@@ -136,7 +136,7 @@ export let productsEstudio = [
       "rivera-indarte/5.jpeg",
       "rivera-indarte/7.jpeg",
     ],
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatem vitae eligendi explicabo, praesentium harum quia ipsam debitis? Aut hic cum quos impedit reprehenderit error illum adipisci ex pariatur provident!",
+    text: "",
   },
   {
     id: 8,
@@ -155,7 +155,7 @@ export let productsEstudio = [
       "casa-perez-corral/3.jpeg",
       "casa-perez-corral/4.jpeg",
     ],
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatem vitae eligendi explicabo, praesentium harum quia ipsam debitis? Aut hic cum quos impedit reprehenderit error illum adipisci ex pariatur provident!",
+    text: "",
   },
   {
     id: 9,
@@ -175,7 +175,7 @@ export let productsEstudio = [
       "emma-bakery/5.jpg",
       
     ],
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatem vitae eligendi explicabo, praesentium harum quia ipsam debitis? Aut hic cum quos impedit reprehenderit error illum adipisci ex pariatur provident!",
+    text: "",
   },
   {
     id: 10,
@@ -186,15 +186,15 @@ export let productsEstudio = [
     images: [
       "casa-los-puentes/2.jpeg",
       "casa-los-puentes/1.jpeg",
-      "casa-los-puentes/3.jpg",
-      "casa-los-puentes/4.jpg",
-      "casa-los-puentes/5.jpg",
-      "casa-los-puentes/6.jpg",
       "casa-los-puentes/7.jpg",
+      "casa-los-puentes/4.jpg",
+      "casa-los-puentes/3.jpg",
+      "casa-los-puentes/6.jpg",
+      "casa-los-puentes/5.jpg",
       "casa-los-puentes/8.jpg",
       "casa-los-puentes/9.jpg",
     ],
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatem vitae eligendi explicabo, praesentium harum quia ipsam debitis? Aut hic cum quos impedit reprehenderit error illum adipisci ex pariatur provident!",
+    text: "",
   },
   {
     id: 11,
@@ -204,14 +204,14 @@ export let productsEstudio = [
     backgroundImg: "container-productos-estudio",
     images: [
       "casa-san-matias-817/1.jpg",
+      "casa-san-matias-817/6.jpg",
       "casa-san-matias-817/2.jpg",
-      "casa-san-matias-817/3.jpg",
       "casa-san-matias-817/4.jpg",
       "casa-san-matias-817/5.jpg",
-      "casa-san-matias-817/6.jpg",
       "casa-san-matias-817/7.jpg",
+      "casa-san-matias-817/3.jpg",
     ],
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatem vitae eligendi explicabo, praesentium harum quia ipsam debitis? Aut hic cum quos impedit reprehenderit error illum adipisci ex pariatur provident!",
+    text: ""
   },
 ];
 
