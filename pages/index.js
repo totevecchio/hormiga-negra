@@ -1,23 +1,28 @@
-import React, { useState, useEffect } from "react";
+import router from "next/router";
+import { useEffect, useState } from "react";
 import video from "../images/hn2.mp4";
-import video2 from "../images/video2.mp4";
-import Nav from "../components/Nav";
-import Footer from "../components/Footer";
 
-export default function Home() {
-  const [videoFinished , setVideoFinished] = useState(false)
-  
+export default function Index() {
+  // const [mobile, setMobile] =useState(true)
+  // useEffect(() => {
+  //   if (window.innerWidth <= 800 || window.innerHeight <= 600) {
+  //     router.push('/home')
+  //     console.log('mobile');
+  //   } else {
+  //     setMobile(false);
+  //   }
+  // }, []);
+
   return (
     <div className="container-home">
-    {videoFinished && <Nav /> }
-      <video className="home" autoPlay muted onEnded={() => setVideoFinished(true)}>
+      <video
+        className="index-video"
+        autoPlay
+        muted
+        onEnded={() => router.push("/home")}
+      >
         <source src={video} type="video/mp4" id="video" />
-      </video> 
-      { videoFinished && <video className="home" autoPlay muted loop onEnded={() => setVideoFinished(true)}>
-        <source src={video2} type="video/mp4" id="video" />
-      </video> }
-      <div className="list"></div>
-      {videoFinished && <Footer /> }
+      </video>
     </div>
   );
 }

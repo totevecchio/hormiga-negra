@@ -34,6 +34,7 @@ const Products = ({ products }) => {
                     onMouseLeave={(e) => (e.currentTarget.src = product.url)}
                     onMouseOver={(e) => setHoverName(product.name)}
                   />
+                  <h3 className="productName">{product.name}</h3>
                 </a>
               </Link>
             </div>

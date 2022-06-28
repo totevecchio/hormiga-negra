@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-import { staff } from "../db";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 

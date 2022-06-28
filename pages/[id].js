@@ -31,32 +31,32 @@ const Page = (context) => {
 
   return (
     <div className={backgroundClass}>
-      <Nav />
-      <div className="container-id">
-        <div className="photos-container">
-          <div className="photos">
-            <div className="big-photo">
-              <div className="titulo">{title}</div>
-              {data.map((e, i) => (
-                <img
-                  key={i}
-                  src={e}
-                  width={200}
-                  height={200}
-                  alt="photo"
-                  onClick={() => handleChange(e)}
-                  className="small-img"
-                />
-              ))}
-            </div>
-          </div>
-          <div className="text">
-            <p>{text}</p>
+    <Nav />
+    <div className="container-id">
+      <div className="photos-container">
+        <div className="photos">
+          <div className="big-photo">
+            <div className="titulo">{title}</div>
+            {data.map((e, i) => (
+              <img
+                key={i}
+                src={e}
+                width={200}
+                height={200}
+                alt="photo"
+                onClick={() => handleChange(e)}
+                className="small-img"
+              />
+            ))}
           </div>
         </div>
+        <div className="text">
+          <p>{text}</p>
+        </div>
       </div>
-      <Footer />
     </div>
+    <Footer />
+  </div>
   );
 };
 
