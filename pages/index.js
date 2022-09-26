@@ -10,8 +10,6 @@ export default function Index() {
     window.innerWidth <= 800 || window.innerHeight <= 600 ? setVideo(mobileVideo) : setVideo(desktopVideo)
   },[])
 
-  console.log(vid);
-
   return (
     <div className="container-home">
       {typeof window !== 'undefined' &&

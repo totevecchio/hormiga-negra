@@ -10,7 +10,7 @@ const Home = () => {
       <Nav />
       <video
         className="home"
-        autoPlay
+        autoPlay={true}
         muted
         loop
         onEnded={() => setVideoFinished(true)}
