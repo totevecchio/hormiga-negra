@@ -28,7 +28,7 @@ const Contacto = () => {
             </div>
             <div className="iconos">
               <div className="text-back-icons">
-                <a href="https://www.instagram.com/hnconstructora/?r=nametag">
+                <a href="https://www.instagram.com/hnestudio/?r=nametag">
                   <img src="/instagram-icone-noir.png" 
                   onMouseEnter={(e) => (e.currentTarget.src = '/instagram-icone-noir-white.png')}
                     onMouseLeave={(e) => (e.currentTarget.src = '/instagram-icone-noir.png')}
