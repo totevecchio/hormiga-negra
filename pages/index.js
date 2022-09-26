@@ -17,7 +17,7 @@ export default function Index() {
       {typeof window !== 'undefined' &&
       <video
         className="index-video"
-        autoPlay
+        autoPlay={true}
         muted
         onEnded={() => router.push("/home")}
       >
