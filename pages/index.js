@@ -1,28 +1,28 @@
 import router from "next/router";
 import { useEffect, useState } from "react";
-import video from "../images/hn2.mp4";
+import desktopVideo from "../images/hn2.mp4";
+import mobileVideo from "../images/hnmobile.mp4"
 
 export default function Index() {
-  // const [mobile, setMobile] =useState(true)
-  // useEffect(() => {
-  //   if (window.innerWidth <= 800 || window.innerHeight <= 600) {
-  //     router.push('/home')
-  //     console.log('mobile');
-  //   } else {
-  //     setMobile(false);
-  //   }
-  // }, []);
+  const [vid, setVideo] = useState()
+
+  useEffect(() => { 
+    window.innerWidth <= 800 || window.innerHeight <= 600 ? setVideo(mobileVideo) : setVideo(desktopVideo)
+  },[])
+
+  console.log(vid);
 
   return (
     <div className="container-home">
+      {typeof window !== 'undefined' &&
       <video
         className="index-video"
         autoPlay
         muted
         onEnded={() => router.push("/home")}
       >
-        <source src={video} type="video/mp4" id="video" />
-      </video>
+        <source src={window.innerWidth <= 800 || window.innerHeight <= 600 ? mobileVideo : desktopVideo} type="video/mp4" id="video" />
+      </video>}
     </div>
   );
 }
