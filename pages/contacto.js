@@ -34,7 +34,7 @@ const Contacto = () => {
                     onMouseLeave={(e) => (e.currentTarget.src = '/instagram-icone-noir.png')}
                   alt="" />
                 </a>
-                <a href="https://api.whatsapp.com/send?phone=5401155238951&text=Hola%2C%20estoy%20aqu%C3%AD%20por%20">
+                <a href="https://api.whatsapp.com/send?phone=5401158330897&text=Hola%2C%20estoy%20aqu%C3%AD%20por%20">
                   <img src="/whatsapp1.png"
                     onMouseEnter={(e) => (e.currentTarget.src = '/whatsapp1-white.png')}
                     onMouseLeave={(e) => (e.currentTarget.src = '/whatsapp1.png')}
